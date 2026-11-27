@@ -18,6 +18,8 @@
 * The CLI no longer probes `127.0.0.1:8765` for a server: it uses a server only when
   `--url` or `ANKICLI_URL` names one, and otherwise opens the collection. Port 8765 is
   also AnkiConnect's, and a server found there may hold a different collection.
+* `serve` accepts a listening socket from systemd socket activation, and `--idle-exit
+  SECONDS` (`ANKICLI_IDLE_EXIT`) exits after that long without a request, never during one.
 
 ## 0.1.0 — 2026-10-26
 
