@@ -20,6 +20,8 @@
   also AnkiConnect's, and a server found there may hold a different collection.
 * `serve` accepts a listening socket from systemd socket activation, and `--idle-exit
   SECONDS` (`ANKICLI_IDLE_EXIT`) exits after that long without a request, never during one.
+* Automatic backups (`--backup-minutes`) create the backups folder: until a manual backup
+  had made it, every automatic backup failed with "No such file or directory".
 
 ## 0.1.0 — 2026-10-26
 
