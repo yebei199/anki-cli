@@ -15,6 +15,9 @@
 * The CLI no longer crashes on consoles with a legacy code page (Windows cp1252).
 * The legacy `sync` action now fails when media sync fails or doesn't finish in time,
   like AnkiConnect, instead of returning success with media left unsynced.
+* The CLI no longer probes `127.0.0.1:8765` for a server: it uses a server only when
+  `--url` or `ANKICLI_URL` names one, and otherwise opens the collection. Port 8765 is
+  also AnkiConnect's, and a server found there may hold a different collection.
 
 ## 0.1.0 — 2026-10-26
 
